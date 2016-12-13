@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Budget Allowance</string>
+    <string name="action_settings">Settings</string>
+    <string name="moneyLeft">0</string>
+</resources>
