@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         if(fab != null) {
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
-                    Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                public void onClick(View v) {
+                    Payment newPay = new Payment(30.0,"12/22/2016");
                 }
             });
         }

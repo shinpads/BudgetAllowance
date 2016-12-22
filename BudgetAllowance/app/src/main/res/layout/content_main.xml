@@ -15,7 +15,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button Test"
+        android:text="Add Payment"
         android:id="@+id/testbutton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -30,7 +30,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/moneyLeft"
         android:id="@+id/money"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="23dp"
         android:textAlignment="center"
         android:textSize="70dp"
         android:layout_below="@+id/testbutton"
