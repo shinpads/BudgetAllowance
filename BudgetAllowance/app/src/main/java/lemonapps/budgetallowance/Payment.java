@@ -6,8 +6,12 @@ package lemonapps.budgetallowance;
 public class Payment {
     double value;
     String date;
-    public Payment(double _value, String _date) {
+    String desc;
+
+    public Payment(double _value, String _date, String _desc) {
         value = _value;
         date = _date;
+        desc = _desc;
     }
+
 }

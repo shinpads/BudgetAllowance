@@ -2,16 +2,18 @@ package lemonapps.budgetallowance;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    public List<Payment> payments = new ArrayList<Payment>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,30 +22,19 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        Button btnTest = (Button) findViewById(R.id.testbutton);
+
 
         if(fab != null) {
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Payment newPay = new Payment(30.0,"12/22/2016");
+                    Payment newPay = new Payment(30.0,"12/22/2016","Test Payment");
                 }
             });
         }
 
-
-        if(btnTest!= null) {
-            btnTest.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
-        }
 
     }
-
-
 
 
     @Override
@@ -67,4 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
