@@ -1,5 +1,6 @@
 package lemonapps.budgetallowance;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -13,13 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    public List<Payment> payments = new ArrayList<Payment>();
+    public static List<Payment> payments = new ArrayList<Payment>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.mainToolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Payment newPay = new Payment(30.0,"12/22/2016","Test Payment");
+                   StartAddPaymentActivity();
+
                 }
             });
         }
@@ -36,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    private void StartAddPaymentActivity() {
+        Intent intent = new Intent(this,addPayment.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -52,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_showPastPayments) {
+            Intent intentPastPayments = new Intent(this,newPayment.class);
+            startActivity(intentPastPayments);
             return true;
         }
 
