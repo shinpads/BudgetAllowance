@@ -22,7 +22,8 @@
             android:name=".newPayment"
             android:label="@string/title_activity_new_payment"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".addPayment"></activity>
+        <activity android:name=".addPayment" />
+        <activity android:name=".addAllowance"></activity>
     </application>
 
 </manifest>

@@ -5,18 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 //THIS ACTIVITY IS TO ADD A PAYMENT
 public class addPayment extends AppCompatActivity {
     EditText txtValue;
     EditText txtDesc;
     Button btnAdd;
-    RadioButton btnPlusOrMinus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
