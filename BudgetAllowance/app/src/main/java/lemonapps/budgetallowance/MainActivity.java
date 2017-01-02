@@ -56,17 +56,12 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_showPastPayments) {
             Intent intentPastPayments = new Intent(this,newPayment.class);
             startActivity(intentPastPayments);
             return true;
         }
-        /*
-        if(id == R.id.action_showAllowanceSettings){
-            startActivity(new Intent(this,addAllowance.class));
-            return true;
-        }
-        */
 
         return super.onOptionsItemSelected(item);
     }

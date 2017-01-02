@@ -7,18 +7,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="lemonapps.budgetallowance.addAllowance"
-    android:orientation="vertical">
-    <TextView
+    tools:context="lemonapps.budgetallowance.addAllowance">
+
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Time"
-        android:id="@+id/textView4" />
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/allowanceTime" />
-
-
+        android:id="@+id/spinner"
+        android:layout_weight="1" />
 </LinearLayout>
