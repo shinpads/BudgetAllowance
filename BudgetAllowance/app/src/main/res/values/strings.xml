@@ -5,4 +5,11 @@
     <string name="title_activity_new_payment">newPayment</string>
     <string name="paymentDesc">Payment Description</string>
     <string name="paymentValue">Value</string>
+    <string-array name="timeOptions">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Bi-Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
 </resources>
