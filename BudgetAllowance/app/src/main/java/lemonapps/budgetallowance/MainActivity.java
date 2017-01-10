@@ -62,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intentPastPayments);
             return true;
         }
+        if(id== R.id.action_showAllowanceSettings) {
+            Intent i = new Intent(this,addAllowance.class);
+            startActivity(i);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

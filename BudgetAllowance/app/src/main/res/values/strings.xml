@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Budget Allowance</string>
     <string name="action_showPastPayments">Past Payments</string>
+    <string name="action_showAllowanceSettings">Allowance Settings</string>
     <string name="moneyLeft">0</string>
     <string name="title_activity_new_payment">newPayment</string>
     <string name="paymentDesc">Payment Description</string>
@@ -11,5 +12,7 @@
         <item>Bi-Weekly</item>
         <item>Monthly</item>
     </string-array>
-
+   <string name="allowanceSettingsAmount">Amount</string>
+    <string name="allowanceSettingsReccuringTime">Recurring Time</string>
+    <string name="allowanceSettingsSave">SAVE</string>
 </resources>
